@@ -2,7 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\Mover.cs">
     <Files>
+<<<<<<< HEAD
+      <File FileName="Assets\Code\Mover.cs" Line="20" Column="23" />
+=======
       <File FileName="Assets\Code\Mover.cs" Line="1" Column="1" />
+>>>>>>> 1628a9b06f6c634fdf7ade87a20f6a57e4976a1f
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
