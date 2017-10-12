@@ -8,9 +8,16 @@ namespace TAMK.VCSExample
 		// Movement speed
 		[SerializeField]
 		private float speed;
+       [SerializeField]
+       float rotationSpeed = 90f;
+
+
 
 		void Update()
 		{
+		
+			Rotate();
+		
 			if (Input.GetKey (KeyCode.W)) {
 				transform.Translate (Vector3.forward * Time.deltaTime * speed);
 			} else if (Input.GetKey(KeyCode.S)) {
@@ -24,6 +31,17 @@ namespace TAMK.VCSExample
 			}
 
 
-		}
+        }
+        
+        void Rotate()
+        {
+            if(Input.GetButton("Rotation"))
+            {
+                float rotation = Input.GetAxis("Rotation") * rotationSpeed;
+                transform.RotateAround(transform.position, transform.up, Time.deltaTime * rotation);
+            }
+            
+        }
+        
 	}
 }
